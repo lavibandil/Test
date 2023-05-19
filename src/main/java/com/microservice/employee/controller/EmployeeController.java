@@ -28,7 +28,8 @@ public class EmployeeController {
         System.out.println("inside get by Id method");
         return new ResponseEntity<>(employeeService.getEmployeeById(employeeId),HttpStatus.OK);
     }
-
+/* This not controller*/
+    
     @PostMapping(path="/addEmployee")
     ResponseEntity<String >createEmployee(@RequestBody Employee employee){
         System.out.println("inside post method");
